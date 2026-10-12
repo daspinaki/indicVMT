@@ -1,0 +1,17 @@
+pandas
+pyyaml
+tqdm
+pillow
+requests
+# API models
+openai
+google-generativeai
+# Gemma 3 (local)
+torch
+transformers
+unsloth
+# preprocessing
+torchvision
+opencv-python
+scikit-learn
+decord

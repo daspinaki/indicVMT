@@ -1,0 +1,29 @@
+# Generation parameters, one section per model.
+# Copy to configs/generation.yaml and fill in the values you want to use.
+# Keys left as null are not sent, i.e. the library / API default is used.
+# Any other keyword accepted by the respective API can be added.
+
+gpt:            # openai chat.completions.create(...)
+  temperature: null
+  top_p: null
+  max_tokens: null
+  seed: null
+
+gemini:         # google.generativeai GenerationConfig(...)
+  temperature: null
+  top_p: null
+  max_output_tokens: null
+
+gemma3:         # transformers model.generate(...)
+  do_sample: null
+  temperature: null
+  top_p: null
+  top_k: null
+  max_new_tokens: null
+
+llama4:         # llama-server /v1/chat/completions payload
+  temperature: null
+  top_p: null
+  min_p: null
+  max_tokens: null
+  seed: null
