@@ -132,9 +132,10 @@ DEPENDENT_CASCADE = (
 # Fig. 26 - Independent cascade (frames, single call)
 # ---------------------------------------------------------------------------
 INDEPENDENT_CASCADE = (
-    "English sentence: {english_src}\n\n"
+    
     "Using the provided image frames, identify important visual information in the frame."
-    "and use it to translate the sentence into {target}.\n\n"
+    "Now use it to translate the below given sentence into {target}.\n\n"
+    "English sentence: {english_src}.\n\n"
     "Output ONLY the translated sentence."
 )
 
@@ -145,7 +146,7 @@ STRATEGIES = {
     "zero_shot_video":     (None,             ZERO_SHOT_VIDEO,    True,  False),
     "zero_shot_tdv":       (None,             ZERO_SHOT_TDV,      False, True),
     "fewshot_only":        (None,             FEW_SHOT_ONLY,      False, False),
-    "hindi_fshot_tdv":     (GROUNDED_SYSTEM,  HINDI_FEW_SHOT_TDV, False, True),
+    "hindi_fshot_tdv":     (None,  HINDI_FEW_SHOT_TDV, False, True),
     "lang_fshot_tdv":      (None,             LANG_FEW_SHOT_TDV,  False, True),
     "dependent_cascade":   (None,             DEPENDENT_CASCADE,  True,  False),
     "independent_cascade": (None,             INDEPENDENT_CASCADE, True, False),
